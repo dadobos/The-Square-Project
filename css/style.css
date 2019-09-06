@@ -89,11 +89,11 @@ h2 {
 
 @font-face {
   font-family: "Aldo the Apache";
-  src: url("https://github.com/diaid83/The-Square-Project/blob/master/css/fonts/AldotheApache.woff") format("woff");
+  src: url("css/fonts/AldotheApache.woff") format("woff");
 }
 @font-face {
   font-family: "eyelevation6";
-  src: url("https://github.com/diaid83/The-Square-Project/blob/master/css/fonts/eyelevation6.woff") format("woff");
+  src: url("css/fonts/eyelevation6.woff") format("woff");
 }
 
 /* The Overlay (background) */
