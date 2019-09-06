@@ -57,9 +57,9 @@ h2 {
 }
 .inner-div {
   -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
-  background-color: rgb(26, 36, 36);
+  background-color: orange;
   opacity: 0.8;
   align-content: space-around;
   left: 40%;
@@ -89,11 +89,13 @@ h2 {
 
 @font-face {
   font-family: "Aldo the Apache";
-  src: url("css/fonts/AldotheApache.woff") format("woff");
+  src: url("font/AldotheApache.woff") format("woff");
+  src: url("font/AldotheApache.ttf") format("ttf");
 }
 @font-face {
   font-family: "eyelevation6";
-  src: url("css/fonts/eyelevation6.woff") format("woff");
+  src: url("font/eyelevation6.woff") format("woff");
+  src: url("font/eyelevation6.ttf") format("ttf");
 }
 
 /* The Overlay (background) */
