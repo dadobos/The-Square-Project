@@ -15,7 +15,6 @@ body {
   background-size: cover;
   text-align: center;
   color: white;
-  
 }
 
 .container-fluid {
@@ -28,6 +27,20 @@ body {
   width: 100vw;
   position: fixed;
   overflow: auto;
+}
+@font-face {
+  font-family: "Aldo the Apache";
+  src: url("css/font/AldotheApache.eot");
+  src: url("css/font/AldotheApache.ttf") format("truetype"),
+    url("css/font/AldotheApache.otf") format("opentype"),
+    url("css/font/AldotheApache.woff") format("woff");
+}
+@font-face {
+  font-family: "eyelevation6";
+  src: url("css/font/eyelevation6.eot");
+  src: url("css/font/eyelevation6.ttf") format("truetype"),
+    url("css/font/eyelevation6.otf") format("opentype"),
+    url("css/font/eyelevation6.woff") format("woff");
 }
 
 h1 {
@@ -54,14 +67,14 @@ h2 {
   max-height: 700px;
   position: relative;
   top: 1vw;
-  left: 0;
+  left: 1vw;
   text-align: center;
 }
 .inner-div {
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  background-color: dimgray;
+
   opacity: 0.8;
   align-content: space-around;
   left: 40%;
@@ -87,26 +100,6 @@ h2 {
   height: 60px;
   line-height: 60px;
   font-size: 10px;
-}
-
-
-
-
-
-@font-face {
-  font-family: "Aldo the Apache",sans-serif;
-  src: url("css/font/AldotheApache.ttf");
-  src: url("css/font/AldotheApache.eot") format("eot"),
-    url("css/font/AldotheApache.otf") format("otf"),
-    url("css/font/AldotheApache.woff") format("woff");
-
-}
-@font-face {
-  font-family: "eyelevation6",sans-serif;
-  src: url("css/font/eyelevation6.eot");
-  src: url("css/font/eyelevation6.ttf") format("ttf"),
-    url("css/font/eyelevation6.otf") format("otf"),
-    url("css/font/eyelevation6.woff") format("woff");
 }
 
 /* The Overlay (background) */
@@ -184,12 +177,9 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  
 }
 .contactDetails > i {
   font-size: 3vw;
-  color: white;
-  
 }
 ul {
   list-style: none;
