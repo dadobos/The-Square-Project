@@ -15,6 +15,7 @@ body {
   background-size: cover;
   text-align: center;
   color: white;
+  
 }
 
 .container-fluid {
@@ -26,6 +27,7 @@ body {
   padding: 1vw;
   width: 100vw;
   position: fixed;
+  overflow: auto;
 }
 
 h1 {
@@ -47,7 +49,7 @@ h2 {
 .outer-div {
   padding: 10px;
   display: table;
-  max-width: 700px;
+  max-width: max-content;
   align-self: center;
   max-height: 700px;
   position: relative;
@@ -57,9 +59,9 @@ h2 {
 }
 .inner-div {
   -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  background-color: orange;
+  background-color: dimgray;
   opacity: 0.8;
   align-content: space-around;
   left: 40%;
@@ -70,7 +72,7 @@ h2 {
   margin: 3vw;
   size: initial;
   text-align: center;
-  max-width: 80%;
+  max-width: max-content;
   letter-spacing: 3px;
   line-height: 1.8;
   cursor: pointer;
@@ -80,22 +82,31 @@ h2 {
   position: fixed;
   left: 3vw;
   bottom: 0;
-  max-width: 50%;
+  max-width: max-content;
   text-align: justify;
   height: 60px;
   line-height: 60px;
   font-size: 10px;
 }
 
+
+
+
+
 @font-face {
-  font-family: "Aldo the Apache";
-  src: url("font/AldotheApache.woff") format("woff");
-  src: url("font/AldotheApache.ttf") format("ttf");
+  font-family: "Aldo the Apache",sans-serif;
+  src: url("css/font/AldotheApache.ttf");
+  src: url("css/font/AldotheApache.eot") format("eot"),
+    url("css/font/AldotheApache.otf") format("otf"),
+    url("css/font/AldotheApache.woff") format("woff");
+
 }
 @font-face {
-  font-family: "eyelevation6";
-  src: url("font/eyelevation6.woff") format("woff");
-  src: url("font/eyelevation6.ttf") format("ttf");
+  font-family: "eyelevation6",sans-serif;
+  src: url("css/font/eyelevation6.eot");
+  src: url("css/font/eyelevation6.ttf") format("ttf"),
+    url("css/font/eyelevation6.otf") format("otf"),
+    url("css/font/eyelevation6.woff") format("woff");
 }
 
 /* The Overlay (background) */
@@ -127,9 +138,9 @@ h2 {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 3vmax;
   color: #818181;
-  display: block; /* Display block instead of inline */
+  display: inline-flex; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
 }
 
@@ -148,7 +159,7 @@ h2 {
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-width: 600px) {
+@media screen and (max-height: 450px) {
   .overlay a {
     font-size: 20px;
   }
@@ -173,14 +184,17 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  
 }
-i {
+.contactDetails > i {
   font-size: 3vw;
   color: white;
+  
 }
 ul {
   list-style: none;
   text-align: left;
+  width: min-content;
 }
 
 #mapContainer {
